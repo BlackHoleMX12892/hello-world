@@ -1,3 +1,4 @@
+![Interpreter running a program](.github/assets/image.png)
 # Hello World
 Hi, this is a joke program that let's you use an assembler to create programs that can only print "Hello, World!" using the HELLOWORLD instruction, and execute them inside an interpreter.
 
