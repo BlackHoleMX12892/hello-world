@@ -3,6 +3,8 @@ Hi, this is a joke program that let's you use an assembler to create programs th
 
 ## Building:
 To build the program you need to run make.
+If you are not on MacOS you should use C and C++ compilers for your OS.
+You will need to build main.c for the interpreter and assembler/main.cpp for the assembler.
 
 ## Instructions:
 The only instruction the interpreter can execute is 0x1 which prints "Hello, World!" to stdout.
