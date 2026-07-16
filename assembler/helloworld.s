@@ -2,4 +2,5 @@ HELLOWORLD
 HELLOWORLD
 HELLOWORLD
 HELLOWORLD
-; print helloworld 4 times, every line that isn't HELLOWORLD will be ignored.
+EXIT
+; print helloworld 4 times and exit, every line that isn't HELLOWORLD or EXIT will be ignored.

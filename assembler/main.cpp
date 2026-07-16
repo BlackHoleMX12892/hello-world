@@ -18,6 +18,10 @@ int main() {
 		if (line == "HELLOWORLD") {
 			output.put(0x1);
 		}
+		if (line == "EXIT")
+		{
+			output.put(0x2);
+		}
 	}
 
 	file.close();

@@ -24,6 +24,12 @@ int main() {
 	uint8_t offset = 0x0;
 
 	while((opcode = fgetc(myfile)) != EOF) {
+		if (offset >= 0x10)
+		{
+			printf("The program cannot be loaded because it is bigger than the available memory");
+			break;
+		}
+		
 		mymachine.mem[offset] = (uint8_t)opcode;
 		offset += 0x1;
 	}
@@ -35,7 +41,15 @@ int main() {
 		if (mymachine.mem[mymachine.pc] == (uint8_t)0x1) {
 			printf("Hello, World!");
 			fflush(stdout);
-			mymachine.pc += 0x1;
+			// check if we should increment pc
+			if (mymachine.pc < 0x10)
+			{
+				mymachine.pc += 0x1;
+			}
+		}
+
+		if (mymachine.mem[mymachine.pc] == (uint8_t)0x2) {
+			exit(0);
 		}
 	}
 
