@@ -26,8 +26,8 @@ int main(void) {
 	while((opcode = fgetc(myfile)) != EOF) {
 		if (offset >= 0x10)
 		{
-			printf("The program cannot be loaded because it is bigger than the available memory");
-			break;
+			printf("The program cannot be loaded because it is bigger than the available memory.\n");
+			return 1;
 		}
 		
 		mymachine.mem[offset] = (uint8_t)opcode;
