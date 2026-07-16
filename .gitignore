@@ -1,6 +1,5 @@
 interpreter
 assembler/assembler
-assembler/out.bin
 .DS_Store
 assembler/assembler.dSYM
 interpreter.dSYM

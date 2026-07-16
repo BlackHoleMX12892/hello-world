@@ -8,11 +8,11 @@ typedef struct machine {
 	uint8_t pc;
 } Machine;
 
-int main() {
-	char filename[20];
+int main(void) {
+	char filename[50];
 
 	printf("Welcome! please input a filename:\n");
-	scanf("%19s", filename);
+	scanf("%49s", filename);
 
 	Machine mymachine;
 	mymachine.pc = 0x0;
