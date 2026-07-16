@@ -8,7 +8,7 @@ If you are not on MacOS you should use C and C++ compilers for your OS.
 You will need to build main.c for the interpreter and assembler/main.cpp for the assembler.
 
 ## Instructions:
-| Binary | Assembly | Description |
-| :---   | :---    | :---        |
-| 0x01    | HELLOWORLD | prints "Hello, World!" to stdout. |
-| 0x02    | EXIT | exits execution. |
+| Binary | Hex | Assembly | Description |
+| :---   | :---| :---     | :---        |
+| 00000001 | 0x01    | HELLOWORLD | prints "Hello, World!" to stdout. |
+| 00000010 | 0x02    | EXIT | exits execution. |
