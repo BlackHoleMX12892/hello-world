@@ -8,4 +8,9 @@ If you are not on MacOS you should use C and C++ compilers for your OS.
 You will need to build main.c for the interpreter and assembler/main.cpp for the assembler.
 
 ## Instructions:
-The only instruction the interpreter can execute is 0x1 which prints "Hello, World!" to stdout.
+| Binary | Assembly | Description |
+| :---   | :---:    | ---:        |
+| 0x1    | HELLOWORLD | prints "Hello, World!" to stdout. |
+| :---   | :---:    | ---:        |
+| 0x2    | EXIT | exits execution. |
+| :---   | :---:    | ---:        |
