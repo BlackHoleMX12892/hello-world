@@ -9,5 +9,6 @@ You will need to build main.c for the interpreter and assembler/main.cpp for the
 
 ## Instructions:
 | Binary | Assembly | Description |
+| :---   | :---:    | ---:        |
 | 0x1    | HELLOWORLD | prints "Hello, World!" to stdout. |
 | 0x2    | EXIT | exits execution. |
